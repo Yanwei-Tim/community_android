@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/head">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/add"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:text="@string/add"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_32pt"/>
+    </LinearLayout>
+
+
+    <com.otg.community.view.LoadListView
+            android:id="@+id/listview"
+            android:divider="@color/black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:dividerHeight="1dip"/>
+
+</LinearLayout>

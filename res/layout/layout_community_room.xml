@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:padding="@dimen/margins_10"
+              android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:background="@drawable/selector_corner_frame_center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="@dimen/margins_5"
+                       android:layout_marginRight="@dimen/margins_5"
+                       android:id="@+id/fragment_my_community_ssxq_image"
+                       android:src="@drawable/fragment_my_personal" android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true" android:contentDescription="@null"/>
+
+            <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/newui_darktext"
+                      android:paddingTop="@dimen/margins_10"
+                      android:paddingBottom="@dimen/margins_10"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/community_ssqx"
+                      android:layout_toRightOf="@id/fragment_my_community_ssxq_image"
+                      android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:background="@drawable/selector_corner_frame_center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="@dimen/margins_5"
+                       android:layout_marginRight="@dimen/margins_5"
+                       android:id="@+id/fragment_my_community_address_image"
+                       android:src="@drawable/fragment_my_personal" android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true" android:contentDescription="@null"/>
+
+            <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/newui_darktext"
+                      android:paddingTop="@dimen/margins_10"
+                      android:paddingBottom="@dimen/margins_10"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/community_address"
+                      android:layout_toRightOf="@id/fragment_my_community_address_image"
+                      android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:background="@drawable/selector_corner_frame_center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="@dimen/margins_5"
+                       android:layout_marginRight="@dimen/margins_5"
+                       android:id="@+id/fragment_my_community_doorplate_image"
+                       android:src="@drawable/fragment_my_personal" android:layout_alignParentLeft="true"
+                       android:layout_centerVertical="true" android:contentDescription="@null"/>
+
+            <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/newui_darktext"
+                      android:paddingTop="@dimen/margins_10"
+                      android:paddingBottom="@dimen/margins_10"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/community_doorplate"
+                      android:layout_toRightOf="@id/fragment_my_community_doorplate_image"
+                      android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_marginTop="@dimen/margins_10"
+                android:background="@drawable/selector_corner_frame_center"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+           <!-- <Button android:textSize="@dimen/small_text_size"
+                    android:background="@drawable/lardlord"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margins_5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_lardlord"/>-->
+
+            <Button android:textSize="@dimen/small_text_size"
+                    android:layout_width="fill_parent"
+                    android:layout_margin="@dimen/margins_5"
+                    android:background="@drawable/tenant"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_tenant"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_marginTop="@dimen/margins_10"
+                android:background="@drawable/selector_corner_frame_center"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+            <com.otg.community.view.ScrollListviewDelete
+                    android:id="@+id/community_doorplate_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/margins_10"
+                android:background="@drawable/selector_corner_frame_center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <Button android:textSize="@dimen/small_text_size"
+                    android:background="@color/head"
+                    android:layout_width="fill_parent"
+                    android:textColor="@color/black"
+                    android:text="扫码"
+                    android:layout_margin="@dimen/margins_5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sys"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
